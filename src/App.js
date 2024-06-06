@@ -16,6 +16,9 @@ function App() {
         <Routes>
          <Route>
            <Route path="/showcasehub" element={<Home />} />
+           <Route path="/services" element={<Services />} />
+           <Route path="/products" element={<Products />} />
+           <Route path="/SignUp" element={<SignUp />} />
          </Route>
        </Routes>
       </Router>
