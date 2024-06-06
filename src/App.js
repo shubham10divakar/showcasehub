@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
          <Route>
-           <Route path="/" element={<Home />} />
+           <Route path="/showcasehub" element={<Home />} />
          </Route>
        </Routes>
       </Router>
