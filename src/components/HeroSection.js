@@ -7,7 +7,6 @@ import video from '../videos/video-1.mp4'
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <h5>sdfsdfsd</h5>
       <video src={video} autoPlay muted loop />
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
@@ -17,7 +16,7 @@ function HeroSection() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
+          My Portfolio
         </Button>
         <Button
           className='btns'
@@ -25,7 +24,7 @@ function HeroSection() {
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          Awards&Recognition <i className='far fa-play-circle' />
         </Button>
       </div>
     </div>
