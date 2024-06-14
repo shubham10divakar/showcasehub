@@ -10,7 +10,8 @@ import SignUp from './components/pages/SignUp';
 import Awards from './components/pages/Awards';
 import AboutMe from './components/pages/AboutMe';
 import Portfolio from './components/pages/Portfolio';
-import Projects from './components/pages/Projects'
+import Projects from './components/pages/Projects';
+import Developments from './pages/Developments';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
            <Route path="/SignUp" element={<SignUp />} />
            <Route path='/awards' element={<Awards />} />
            <Route path='/projects' element={<Projects />} />
+           <Route path='/products/:id' element={<Products />} />
+           <Route path='/development' element={<Developments />} />
          </Route>
        </Routes>
       </Router>
