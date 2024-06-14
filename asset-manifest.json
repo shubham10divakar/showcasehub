@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/showcasehub/static/css/main.e3a82668.css",
-    "main.js": "/showcasehub/static/js/main.bc5b69df.js",
+    "main.css": "/showcasehub/static/css/main.7123e87a.css",
+    "main.js": "/showcasehub/static/js/main.0e7d23a1.js",
     "static/js/453.ee0ed3f6.chunk.js": "/showcasehub/static/js/453.ee0ed3f6.chunk.js",
     "static/media/video-1.mp4": "/showcasehub/static/media/video-1.59e75226d30ad48f9ede.mp4",
     "static/media/img-2.jpg": "/showcasehub/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
@@ -9,14 +9,19 @@
     "static/media/img-3.jpg": "/showcasehub/static/media/img-3.6d683c0ee6824af7961a.jpg",
     "static/media/img-5.jpg": "/showcasehub/static/media/img-5.7fadbe1bc2b9569a1941.jpg",
     "static/media/img-1.jpg": "/showcasehub/static/media/img-1.53f4843759ebec256cb9.jpg",
+    "static/media/womenssafety.jpg": "/showcasehub/static/media/womenssafety.1e6323a2644f0276b878.jpg",
+    "static/media/network_analysis_ssld.jpg": "/showcasehub/static/media/network_analysis_ssld.80fa2c0f14d489da3acb.jpg",
+    "static/media/drowziness detection.jpeg": "/showcasehub/static/media/drowziness detection.d835e7f254da24594e4a.jpeg",
+    "static/media/plantdiseasedetection.jpg": "/showcasehub/static/media/plantdiseasedetection.515d1b226702cbc13879.jpg",
+    "static/media/network_analysis.jpg": "/showcasehub/static/media/network_analysis.7fd40b04030888855f7f.jpg",
     "static/media/logo.svg": "/showcasehub/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/showcasehub/index.html",
-    "main.e3a82668.css.map": "/showcasehub/static/css/main.e3a82668.css.map",
-    "main.bc5b69df.js.map": "/showcasehub/static/js/main.bc5b69df.js.map",
+    "main.7123e87a.css.map": "/showcasehub/static/css/main.7123e87a.css.map",
+    "main.0e7d23a1.js.map": "/showcasehub/static/js/main.0e7d23a1.js.map",
     "453.ee0ed3f6.chunk.js.map": "/showcasehub/static/js/453.ee0ed3f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3a82668.css",
-    "static/js/main.bc5b69df.js"
+    "static/css/main.7123e87a.css",
+    "static/js/main.0e7d23a1.js"
   ]
 }
