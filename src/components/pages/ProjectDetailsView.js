@@ -13,9 +13,37 @@ const projectData = {
     endDate: '2023-12-31',
     skills: ['React', 'JavaScript', 'CSS', 'Material-UI'],
     links: {
-      youtube: 'https://www.youtube.com/watch?v=GkFWvz0an48',
-      github: 'https://github.com/example/project',
+      youtube: 'https://www.youtube.com/watch?v=GkFWvz0an48', // Replace with your actual YouTube video URL
+      github: 'https://github.com/example/project', // Replace with your actual GitHub repository URL
     },
+    installation: 'You can install this project using pip. Run the following command:\n\n```pip install your-package```',
+    usageExamples: [
+      {
+        title: 'Example 1',
+        description: 'Description of example 1 usage.',
+        code: 'Your usage code snippet for example 1',
+      },
+      {
+        title: 'Example 2',
+        description: 'Description of example 2 usage.',
+        code: 'Your usage code snippet for example 2',
+      },
+    ],
+    features: [
+      'Feature 1',
+      'Feature 2',
+      'Feature 3',
+    ],
+    contributing: 'Thank you for considering contributing to our project! Please read our [Contributing Guidelines](link-to-contributing-docs) for details on how to get started.',
+    communityLinks: {
+      forum: 'Link to community forum or mailing list',
+      support: 'Link to support channel or FAQ page',
+    },
+    acknowledgments: 'We acknowledge the contributions of individuals or organizations that have helped make this project possible.',
+    screenshots: [
+      'URL to screenshot or demo GIF 1',
+      'URL to screenshot or demo GIF 2',
+    ],
   };
   
   const ProjectDetailsView = () => {
@@ -74,15 +102,85 @@ const projectData = {
                 GitHub Repository
               </a>
             </div>
-            <div className="video-container">
-              <img
-                src={`https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`}
-                alt="YouTube Video Thumbnail"
-                className="video-thumbnail"
-              />
-              <Typography className="video-description">
-                Watch a video overview of the project on YouTube.
+            <div className="section">
+              <Typography variant="h6">
+                <strong>Installation Instructions:</strong>
               </Typography>
+              <Typography>
+                <pre>{projectData.installation}</pre>
+              </Typography>
+            </div>
+            <div className="section">
+              <Typography variant="h6">
+                <strong>Usage Examples:</strong>
+              </Typography>
+              {projectData.usageExamples.map((example, index) => (
+                <div key={index}>
+                  <Typography variant="subtitle1">
+                    {example.title}
+                  </Typography>
+                  <Typography>
+                    {example.description}
+                  </Typography>
+                  <Typography>
+                    <pre>{example.code}</pre>
+                  </Typography>
+                </div>
+              ))}
+            </div>
+            <div className="section">
+              <Typography variant="h6">
+                <strong>Features Overview:</strong>
+              </Typography>
+              <ul>
+                {projectData.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="section">
+              <Typography variant="h6">
+                <strong>Contributing Guidelines:</strong>
+              </Typography>
+              <Typography>
+                {projectData.contributing}
+              </Typography>
+            </div>
+            <div className="section">
+              <Typography variant="h6">
+                <strong>Community and Support:</strong>
+              </Typography>
+              <Typography>
+                Forum: <a href={projectData.communityLinks.forum} target="_blank" rel="noopener noreferrer">{projectData.communityLinks.forum}</a>
+              </Typography>
+              <Typography>
+                Support: <a href={projectData.communityLinks.support} target="_blank" rel="noopener noreferrer">{projectData.communityLinks.support}</a>
+              </Typography>
+            </div>
+            <div className="section">
+              <Typography variant="h6">
+                <strong>Acknowledgments:</strong>
+              </Typography>
+              <Typography>
+                {projectData.acknowledgments}
+              </Typography>
+            </div>
+            <div className="section">
+              <Typography variant="h6">
+                <strong>Embedded YouTube Video:</strong>
+              </Typography>
+              <div className="video-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src={`https://www.youtube.com/embed/${youtubeId}`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="embedded-video"
+                ></iframe>
+              </div>
             </div>
             <Card variant="outlined" className="avatar-container">
               <CardContent>
