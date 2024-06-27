@@ -1,6 +1,9 @@
 import React from 'react';
-import { Container, Card, CardContent, Typography, Avatar } from '@mui/material';
 import './ProjectDetailsView.css';
+import { Container, Card, CardContent, Typography, Avatar, Button } from '@mui/material';
+//import { useTheme } from './CustomThemeProvider';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const projectData = {
     title: 'My Project Title',
@@ -10,14 +13,27 @@ const projectData = {
     endDate: '2023-12-31',
     skills: ['React', 'JavaScript', 'CSS', 'Material-UI'],
     links: {
-      youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      github: 'https://github.com/your-username/your-project-repo',
+      youtube: 'https://www.youtube.com/watch?v=GkFWvz0an48',
+      github: 'https://github.com/example/project',
     },
   };
   
   const ProjectDetailsView = () => {
+    //const { isDark, toggleTheme } = useTheme();
+  
+    // Function to extract YouTube video ID from URL
+    const getYouTubeVideoId = (url) => {
+      const match = url.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+      return match && match[1];
+    };
+  
+    const youtubeId = getYouTubeVideoId(projectData.links.youtube);
+  
     return (
       <Container>
+        {/* <Button onClick={toggleTheme}>
+          Switch to {isDark ? 'Light' : 'Dark'} Theme
+        </Button> */}
         <Card className="project-container">
           <CardContent>
             <Typography className="project-title">
@@ -45,6 +61,29 @@ const projectData = {
                 </li>
               ))}
             </ul>
+            <div className="links-section">
+              <Typography variant="h6">
+                <strong>Links:</strong>
+              </Typography>
+              <a href={projectData.links.youtube} className="link-item" target="_blank" rel="noopener noreferrer">
+                <YouTubeIcon className="link-icon" />
+                YouTube Video
+              </a>
+              <a href={projectData.links.github} className="link-item" target="_blank" rel="noopener noreferrer">
+                <GitHubIcon className="link-icon" />
+                GitHub Repository
+              </a>
+            </div>
+            <div className="video-container">
+              <img
+                src={`https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`}
+                alt="YouTube Video Thumbnail"
+                className="video-thumbnail"
+              />
+              <Typography className="video-description">
+                Watch a video overview of the project on YouTube.
+              </Typography>
+            </div>
             <Card variant="outlined" className="avatar-container">
               <CardContent>
                 <Avatar sx={{ bgcolor: 'primary.main', marginBottom: 2 }}>
@@ -56,31 +95,6 @@ const projectData = {
                 </Typography>
               </CardContent>
             </Card>
-            <div className="links-section">
-              <Typography variant="h6">Links:</Typography>
-              <ul className="skill-list">
-                <li>
-                  <a
-                    href={projectData.links.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-item"
-                  >
-                    YouTube Video
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={projectData.links.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-item"
-                  >
-                    GitHub Repository
-                  </a>
-                </li>
-              </ul>
-            </div>
           </CardContent>
         </Card>
       </Container>
