@@ -25,7 +25,7 @@ function Cards() {
               src={networktool}
               text='Network-Analysis-Tool'
               label='Network Analysis'
-              path='/products/1'
+              path='/projectdetails/1'
               year='2024'
             />
             <CardItem

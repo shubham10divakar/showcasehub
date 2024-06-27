@@ -12,6 +12,7 @@ import AboutMe from './components/pages/AboutMe';
 import Portfolio from './components/pages/Portfolio';
 import Projects from './components/pages/Projects';
 import Developments from './pages/Developments';
+import ProjectDetails from './components/pages/ProjectDetails';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
            <Route path='/awards' element={<Awards />} />
            <Route path='/projects' element={<Projects />} />
            <Route path='/products/:id' element={<Products />} />
+           <Route path='/projectdetails/:id' element={<ProjectDetails />} />
            <Route path='/development' element={<Developments />} />
          </Route>
        </Routes>
