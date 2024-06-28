@@ -75,6 +75,25 @@ body {
   margin-top: 20px;
 }
 
+.language-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.language-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.language-icon svg {
+  width: 30px; /* Adjust icon size as needed */
+  height: auto;
+  margin-right: 5px;
+}
+
 .embedded-video {
   width: 100%;
   height: 400px; /* Adjust height as needed */
