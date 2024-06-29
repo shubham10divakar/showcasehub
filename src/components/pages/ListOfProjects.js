@@ -1,32 +1,36 @@
 const projectData = [{
     id:1,
-    title: 'Network Analysis Tool',
-    description: ' helps to analyze multiple HAR files (HTTPS Archive) which has info of the API class.',
+    title: 'Secure Data Certificate Format Converter (SDCFC)',
+    description: ' Secure Data Certificate Format Converter (SDCFC) is a powerful tool for managing certificate and private key files, offering seamless conversion between PEM, DER, and PKCS12 formats. Whether you need to generate, convert, or manage certificates, SD-CFC provides a user-friendly interface to streamline your workflow securely.',
     owner: 'Subham Divakar(Me)',
     startDate: '2024-01-01',
     endDate: 'Constantly Improving',
     skills: ['Python'],
     links: {
       youtube: 'https://www.youtube.com/watch?v=GkFWvz0an48', // Replace with your actual YouTube video URL
-      github: 'https://github.com/example/project', // Replace with your actual GitHub repository URL
+      github: 'https://github.com/shubham10divakar/sdcfc', // Replace with your actual GitHub repository URL
+      pip:'https://pypi.org/project/sdcfc/',
     },
     installation: 'You can install this project using pip. Run the following command:\n\n```pip install your-package```',
     usageExamples: [
       {
         title: 'Example 1',
-        description: 'Description of example 1 usage.',
-        code: 'Your usage code snippet for example 1',
+        description: 'Install using pip and triger the main menu',
+        code: ' import sdcfc\n #Now you can use functions or classes defined in sdfc module\n sdcfc.main()',
       },
       {
         title: 'Example 2',
-        description: 'Description of example 2 usage.',
-        code: 'Your usage code snippet for example 2',
+        description: 'OR use you can specific functions as well',
+        code: 'Check pypi link',
       },
     ],
     features: [
-      'It helps to analyze multiple HAR files (HTTPS Archive) which has info of the API class',
-      'Feature 2',
-      'Feature 3',
+      'Convert PEM to DER',
+    'Convert DER to PEM',
+    'Convert PEM to PKCS#12',
+    'Convert PKCS#12 to PEM',
+    'Convert DER to PKCS#12'
+
     ],
     contributing: 'Thank you for considering contributing to our project! Please read our [Contributing Guidelines](link-to-contributing-docs) for details on how to get started.',
     communityLinks: {

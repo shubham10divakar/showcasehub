@@ -148,6 +148,10 @@ import projectDataList from './ListOfProjects';
                 <GitHubIcon className="link-icon" />
                 GitHub Repository
               </a>
+              <a href={projectData.links.pip} className="link-item" target="_blank" rel="noopener noreferrer">
+                <GitHubIcon className="link-icon" />
+                PIP / PYPI Link
+              </a>
             </div>
             <div className="section">
             <Typography variant="h6">

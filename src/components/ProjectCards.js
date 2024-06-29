@@ -12,7 +12,7 @@ import ssldscan from '../images/ProjectsImages/network_analysis_ssld.jpg'
 import womensafety from '../images/ProjectsImages/womenssafety.jpg'
 import Drowsiness from '../images/ProjectsImages/drowziness detection.jpeg'
 import plant from '../images/ProjectsImages/plantdiseasedetection.jpg'
-
+import sdcfc from '../images/sdcfc.png'
 
 function Cards() {
   return (
@@ -22,9 +22,9 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src={networktool}
-              text='Network-Analysis-Tool'
-              label='Network Analysis'
+              src={sdcfc}
+              text='Secure Data Certificate Format Converter (SDCFC)'
+              label='SSL certificate management'
               path='/projectdetails/1'
               year='2024'
             />
