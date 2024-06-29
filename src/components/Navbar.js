@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { Avatar } from '@mui/material'; // Import Avatar component from Material-
+import pic from '../images/channelLogo.png'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -28,10 +30,16 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          {/* <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             SubhamDivakar
             <i class='fab fa-typo3' />
-          </Link>
+          </Link> */}
+          <Avatar
+          alt="Subham Divakar"
+          src={pic} // Replace with the actual path to your profile picture
+          sx={{ width: 60, height: 60 }} // Adjust size as needed
+          //className='avatar'
+        />
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>

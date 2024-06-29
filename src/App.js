@@ -14,6 +14,7 @@ import Projects from './components/pages/Projects';
 import Developments from './pages/Developments';
 import ProjectDetails from './components/pages/ProjectDetails';
 import NotFound from './components/pages/NotFound';
+import MyWorks from './components/pages/MyWorks';
 
 function App() {
   return (
@@ -24,12 +25,13 @@ function App() {
          <Route>
          <Route path="/" element={<Home />} />
            <Route path="/showcasehub" element={<Home />} />
-           {/* <Route path="/aboutme" element={<AboutMe />} />
-           <Route path="/portfolio" element={<Portfolio />} />
+           <Route path="/aboutme" element={<AboutMe />} />
+           {/*<Route path="/portfolio" element={<Portfolio />} />
            <Route path="/SignUp" element={<SignUp />} />
            <Route path='/awards' element={<Awards />} /> */}
-           <Route path='/projects' element={<Projects />} />
+           {/* <Route path='/projects' element={<Projects />} /> */}
            {/* <Route path='/products/:id' element={<Products />} /> */}
+           <Route path='/myworks' element={<MyWorks />} />
            <Route path='/projectdetails/:id' element={<ProjectDetails />} />
            {/* <Route path='/development' element={<Developments />} /> */}
            <Route path="*" element={<NotFound />} />
