@@ -11,7 +11,7 @@ const projectData = [{
       github: 'https://github.com/shubham10divakar/sdcfc', // Replace with your actual GitHub repository URL
       pip:'https://pypi.org/project/sdcfc/',
     },
-    installation: 'You can install this project using pip. Run the following command:\n\n```pip install your-package```',
+    installation: 'You can install this project using pip. Run the following command:\n\n```pip install sdcfc```',
     usageExamples: [
       {
         title: 'Example 1',
@@ -55,7 +55,7 @@ const projectData = [{
       youtube: 'https://www.youtube.com/watch?v=GkFWvz0an48', // Replace with your actual YouTube video URL
       github: 'https://github.com/shubham10divakar/Network-Analysis-Tool', // Replace with your actual GitHub repository URL
     },
-    installation: 'You can install this project using pip. Run the following command:\n\n```pip install your-package```',
+    installation: 'You can install this project using pip. Run the following command:\n\n```pip install sdcfc```',
     usageExamples: [
       {
         title: 'Example 1',

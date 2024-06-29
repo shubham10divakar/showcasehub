@@ -19,7 +19,7 @@ body {
 
 .project-title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: bold;
   color: #58a6ff;
   margin-bottom: 16px;
 }
@@ -27,13 +27,13 @@ body {
 .project-description {
   font-size: 16px;
   margin-bottom: 20px;
-  color: #8b949e;
+  color: #0f1011;
 }
 
 .project-owner, .project-dates, .project-skills {
   margin-bottom: 10px;
   font-size: 14px;
-  color: #c9d1d9;
+  color: #0a0d0f;
 }
 
 .skill-list {
