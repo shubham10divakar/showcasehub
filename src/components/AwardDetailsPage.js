@@ -5,6 +5,7 @@ import { Typography } from '@mui/material';
 import AwardDetails from './AwardsDetails';
 import Gallery from './Gallery';
 import awards from './pages/AwardsListJS';
+import { useParams } from 'react-router-dom';
 
 // const awards = [
 //   {
@@ -45,13 +46,18 @@ import awards from './pages/AwardsListJS';
 //   },
 // ];
 
+
 const AwardDetailsPage = () => {
+  const { id } = useParams();
+  console.log(id)
+  var idx = id-1
+  console.log(awards[idx])
   return (
     <div>
       <Typography variant="h4" gutterBottom>
         Award Details
       </Typography>
-      <Gallery images={awards.gallery} />
+      <Gallery images={awards[idx].gallery} />
       <AwardDetails awards={awards} />
     </div>
   );
