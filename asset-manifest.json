@@ -1,33 +1,42 @@
 {
   "files": {
-    "main.css": "/showcasehub/static/css/main.cd2369d0.css",
-    "main.js": "/showcasehub/static/js/main.ac49d7be.js",
+    "main.css": "/showcasehub/static/css/main.cd925883.css",
+    "main.js": "/showcasehub/static/js/main.2d1c6a42.js",
     "static/js/453.481d806d.chunk.js": "/showcasehub/static/js/453.481d806d.chunk.js",
     "static/media/video-2.mp4": "/showcasehub/static/media/video-2.39e6c79bffb375ae929a.mp4",
+    "static/media/1.JPG": "/showcasehub/static/media/1.8442844f13129a5c8bd9.JPG",
+    "static/media/21.JPG": "/showcasehub/static/media/21.ab5fd51dde139f1d432d.JPG",
     "static/media/video-1.mp4": "/showcasehub/static/media/video-1.59e75226d30ad48f9ede.mp4",
+    "static/media/1 (1).jpg": "/showcasehub/static/media/1 (1).80fa1002090486dcdd18.jpg",
     "static/media/sih2019.mp4": "/showcasehub/static/media/sih2019.2981dfa669f9229a0c0a.mp4",
     "static/media/img-2.jpg": "/showcasehub/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
     "static/media/img-4.jpg": "/showcasehub/static/media/img-4.a31875b76d39f6458a6e.jpg",
+    "static/media/3.jpg": "/showcasehub/static/media/3.2ccee63ea7a111e7981a.jpg",
     "static/media/channelLogo.png": "/showcasehub/static/media/channelLogo.656f179f9562f198f8fc.png",
+    "static/media/img-6.jpg": "/showcasehub/static/media/img-6.047226b0f6080d5b242c.jpg",
     "static/media/img-3.jpg": "/showcasehub/static/media/img-3.6d683c0ee6824af7961a.jpg",
     "static/media/img-5.jpg": "/showcasehub/static/media/img-5.7fadbe1bc2b9569a1941.jpg",
     "static/media/img-1.jpg": "/showcasehub/static/media/img-1.53f4843759ebec256cb9.jpg",
     "static/media/womenssafety.jpg": "/showcasehub/static/media/womenssafety.1e6323a2644f0276b878.jpg",
     "static/media/sih2019-1.mp4": "/showcasehub/static/media/sih2019-1.daed532e990b251c0275.mp4",
     "static/media/network_analysis_ssld.jpg": "/showcasehub/static/media/network_analysis_ssld.80fa2c0f14d489da3acb.jpg",
+    "static/media/1 (4).jpg": "/showcasehub/static/media/1 (4).f728b343cd0b67cb8663.jpg",
     "static/media/sdcfc.png": "/showcasehub/static/media/sdcfc.b00b6096e5a64606fd73.png",
+    "static/media/1 (2).jpg": "/showcasehub/static/media/1 (2).c89bb79bf204d2f304ad.jpg",
+    "static/media/1 (3).jpg": "/showcasehub/static/media/1 (3).9dbb35726e59afb2ba4b.jpg",
     "static/media/drowziness detection.jpeg": "/showcasehub/static/media/drowziness detection.d835e7f254da24594e4a.jpeg",
+    "static/media/1 (5).jpg": "/showcasehub/static/media/1 (5).534dc01ae83701399cae.jpg",
     "static/media/plantdiseasedetection.jpg": "/showcasehub/static/media/plantdiseasedetection.515d1b226702cbc13879.jpg",
     "static/media/network_analysis.jpg": "/showcasehub/static/media/network_analysis.7fd40b04030888855f7f.jpg",
     "static/media/python-logo.png": "/showcasehub/static/media/python-logo.c828af7d0a97f43e991f.png",
     "static/media/logo.svg": "/showcasehub/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/showcasehub/index.html",
-    "main.cd2369d0.css.map": "/showcasehub/static/css/main.cd2369d0.css.map",
-    "main.ac49d7be.js.map": "/showcasehub/static/js/main.ac49d7be.js.map",
+    "main.cd925883.css.map": "/showcasehub/static/css/main.cd925883.css.map",
+    "main.2d1c6a42.js.map": "/showcasehub/static/js/main.2d1c6a42.js.map",
     "453.481d806d.chunk.js.map": "/showcasehub/static/js/453.481d806d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd2369d0.css",
-    "static/js/main.ac49d7be.js"
+    "static/css/main.cd925883.css",
+    "static/js/main.2d1c6a42.js"
   ]
 }
