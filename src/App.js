@@ -15,6 +15,8 @@ import Developments from './pages/Developments';
 import ProjectDetails from './components/pages/ProjectDetails';
 import NotFound from './components/pages/NotFound';
 import MyWorks from './components/pages/MyWorks';
+import AwardsPage from './components/AwardsPage';
+import AwardDetailsPage from './components/AwardDetailsPage';
 
 function App() {
   return (
@@ -33,7 +35,8 @@ function App() {
            {/* <Route path='/products/:id' element={<Products />} /> */}
            <Route path='/myworks' element={<MyWorks />} />
            <Route path='/projectdetails/:id' element={<ProjectDetails />} />
-           {/* <Route path='/development' element={<Developments />} /> */}
+           <Route path="/awards" element={<AwardsPage />} />
+           <Route path="/awards/:id" element={<AwardDetailsPage />} />
            <Route path="*" element={<NotFound />} />
          </Route>
        </Routes>
