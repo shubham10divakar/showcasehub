@@ -28,7 +28,7 @@ const awards = [
       id: 2,
       title: 'Smart India Hackathon 2019 Winner.',
       description: 'Smart India Hackathon 2019 Winner.',
-      image: smih1,
+      image: smih3,
       gallery: [smih1, smih2, smih3, smih4, smih5],
     },
     // {
