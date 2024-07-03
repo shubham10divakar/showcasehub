@@ -13,6 +13,7 @@ import womensafety from '../images/ProjectsImages/womenssafety.jpg'
 import Drowsiness from '../images/ProjectsImages/drowziness detection.jpeg'
 import plant from '../images/ProjectsImages/plantdiseasedetection.jpg'
 import sdcfc from '../images/sdcfc.png'
+import sdscmt from '../images/ProjectsImages/sdscmt.png'
 
 function Cards() {
   return (
@@ -21,18 +22,18 @@ function Cards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            <CardItem
-              src={sdcfc}
-              text='Secure Data Certificate Format Converter (SDCFC)'
+          <CardItem
+              src={sdscmt}
+              text='Secure Data SSL Certificate Management Tool(SDSCMT)'
               label='SSL certificate management'
-              path='/projectdetails/1'
+              path='/projectdetails/2'
               year='2024'
             />
             <CardItem
-              src={ssldscan}
-              text='SSLSecureDiveScan'
-              label='Network Analysis'
-              path='/products/2'
+              src={sdcfc}
+              text='Secure Data Certificate Format Converter (SDCFC)'
+              label='SSL private keys management'
+              path='/projectdetails/1'
               year='2024'
             />
           </ul>

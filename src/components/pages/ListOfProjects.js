@@ -45,33 +45,39 @@ const projectData = [{
   }, 
   {
     id : 2,
-    title: 'My Project Title 2',
-    description: 'This is a detailed description of my project. It includes the objectives, scope, and important information.',
-    owner: 'Your Name',
-    startDate: '2023-01-01',
-    endDate: '2023-12-31',
-    skills: ['React', 'JavaScript', 'CSS', 'Material-UI', 'Python'],
+    title: 'Secure Data SSL Certificate Management Tool',
+    description: 'Secure Data SSL Certificate Management Tool (SDSCMT) is a powerful tool for generating and managing self signed ssl certificates and private key files, offering seamless conversion between PEM, DER, and PKCS12 formats as well. Whether you need to generate, convert, or manage self signed ssl certificates, SDSCMT provides a user-friendly interface to get the job done.',
+    owner: 'Me',
+    startDate: '2024-01-01',
+    endDate: 'Currently Ongoing',
+    skills: ['Python'],
     links: {
       youtube: 'https://www.youtube.com/watch?v=GkFWvz0an48', // Replace with your actual YouTube video URL
-      github: 'https://github.com/shubham10divakar/Network-Analysis-Tool', // Replace with your actual GitHub repository URL
+      github: 'https://github.com/shubham10divakar/sdscmt', // Replace with your actual GitHub repository URL
+      pip:'https://pypi.org/project/sdscmt/',
     },
-    installation: 'You can install this project using pip. Run the following command:\n\n```pip install sdcfc```',
+    installation: 'You can install this project using pip. Run the following command:\n\n```pip install sdscmt```',
     usageExamples: [
       {
         title: 'Example 1',
-        description: 'Description of example 1 usage.',
-        code: 'Your usage code snippet for example 1',
+        description: 'Install using pip and triger the main menu',
+        code: ' import sdscmt\n #Now you can use functions or classes defined in sdscmt module\n sdscmt.main()',
       },
       {
         title: 'Example 2',
-        description: 'Description of example 2 usage.',
-        code: 'Your usage code snippet for example 2',
+        description: 'OR use you can specific functions as well',
+        code: 'Check pypi link',
       },
     ],
     features: [
-      'Feature 1',
-      'Feature 2',
-      'Feature 3',
+      'Generate Self Signed Certificates',
+      'Validate existing self signed ssl certs',
+      'Convert PEM to DER',
+      'Convert DER to PEM',
+      'Convert PEM to PKCS#12',
+      'Convert PKCS#12 to PEM',
+      'Convert DER to PKCS#12',
+
     ],
     contributing: 'Thank you for considering contributing to our project! Please read our [Contributing Guidelines](link-to-contributing-docs) for details on how to get started.',
     communityLinks: {
