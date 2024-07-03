@@ -2,12 +2,15 @@ import React from 'react';
 import '../../App.css';
 import { Chrono } from "react-chrono";
 import Timeline from './Timeline';
+import Introduction from './Introduction';
 
 export default function Portfolio() {
 
 
   return (
-    <Timeline></Timeline>
+    <div>
+      <Introduction />
+    </div>
   );
 
 //   const items = [{

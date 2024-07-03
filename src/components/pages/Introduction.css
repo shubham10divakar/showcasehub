@@ -1,0 +1,40 @@
+.introduction-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    /* background-color: #d61b1b; */
+  }
+  
+  .intro-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .intro-text {
+    max-width: 600px;
+    margin-right: 50px;
+  }
+  
+  .intro-text h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #fcfafa;
+  }
+  
+  .intro-text p {
+    font-size: 1.2em;
+    color: #faf7f7;
+  }
+  
+  .intro-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
