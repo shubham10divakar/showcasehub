@@ -18,6 +18,7 @@ import MyWorks from './components/pages/MyWorks';
 import AwardsPage from './components/AwardsPage';
 import AwardDetailsPage from './components/AwardDetailsPage';
 import PublicationsList from './components/pages/PublicationsList';
+import PublicationDetail from './components/pages/PublicationDetail';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
            <Route path="/aboutme" element={<AboutMe />} />
            <Route path="/portfolio" element={<Portfolio />} />
            <Route path="/publications" element={<PublicationsList />} />
-          {/* <Route path="/publications/:id" element={<PublicationDe} /> */}
+           <Route path="/publications/:id" element={<PublicationDetail />} />
            {/*<Route path="/SignUp" element={<SignUp />} />
            <Route path='/awards' element={<Awards />} /> */}
            {/* <Route path='/projects' element={<Projects />} /> */}

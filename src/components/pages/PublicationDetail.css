@@ -1,0 +1,36 @@
+/* src/components/PublicationDetail.css */
+.publication-detail {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .publication-detail img.detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .publication-detail h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .publication-detail p {
+    margin: 10px 0;
+  }
+  
+  .detail-section {
+    margin-bottom: 20px;
+  }
+  
+  .detail-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .detail-section p {
+    margin: 0;
+  }
+  

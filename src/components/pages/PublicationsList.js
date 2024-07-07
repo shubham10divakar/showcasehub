@@ -6,8 +6,12 @@ import video1 from '../../videos/innovideoplayback2.mp4'
 import imag1 from '../../images/img-1.jpg'
 
 const publications = [
-  { id: 1, title: 'Publication 1', year: 2021, citations: 15, GoogleScholarLink: 'dsfdsf', domain: 'dsfds', imageUrl: imag1 },
-  { id: 2, title: 'Publication 2', year: 2020, citations: 10, GoogleScholarLink: 'dsfsdf', domain: 'dsfds', imageUrl: imag1},
+  { id: 1, title: 'Publication 1', year: 2021, citations: 15, GoogleScholarLink: 'dsfdsf', domain: 'dsfds', imageUrl: imag1, abstract: 'Abstract of Publication 1',
+    findings: 'Findings of Publication 1',
+    details: 'Major details of Publication 1' },
+  { id: 2, title: 'Publication 2', year: 2020, citations: 10, GoogleScholarLink: 'dsfsdf', domain: 'dsfds', imageUrl: imag1,  abstract: 'Abstract of Publication 2',
+    findings: 'Findings of Publication 1',
+    details: 'Major details of Publication 2' },
   // Add more publications as needed
 ];
 
