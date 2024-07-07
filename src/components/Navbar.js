@@ -76,6 +76,16 @@ function Navbar() {
                 Portfolio
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link
+                to='/publications'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Publications
+              </Link>
+            </li>
+            
 
           </ul>
                 {button && <Button buttonStyle='btn--outline'>Awards</Button>}

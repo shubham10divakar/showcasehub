@@ -17,6 +17,7 @@ import NotFound from './components/pages/NotFound';
 import MyWorks from './components/pages/MyWorks';
 import AwardsPage from './components/AwardsPage';
 import AwardDetailsPage from './components/AwardDetailsPage';
+import PublicationsList from './components/pages/PublicationsList';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
            <Route path="/showcasehub" element={<Home />} />
            <Route path="/aboutme" element={<AboutMe />} />
            <Route path="/portfolio" element={<Portfolio />} />
+           <Route path="/publications" element={<PublicationsList />} />
+          {/* <Route path="/publications/:id" element={<PublicationDe} /> */}
            {/*<Route path="/SignUp" element={<SignUp />} />
            <Route path='/awards' element={<Awards />} /> */}
            {/* <Route path='/projects' element={<Projects />} /> */}
