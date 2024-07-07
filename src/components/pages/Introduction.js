@@ -12,7 +12,7 @@ function Introduction() {
         <div className="intro-text">
         {/* <DisplayVideo file={video1}></DisplayVideo> */}
           <h1>Hello, I am Subham Divakar</h1>
-          <p>Welcome to my portfolio.</p>
+          {/* <p>Welcome to my portfolio.</p> */}
         </div>
         <div className="intro-image">
           <img src={profilePic} alt="Subham Divakar" />
