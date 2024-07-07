@@ -1,0 +1,76 @@
+.work-experience-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #333; /* Add border here */
+    border-radius: 10px; /* Optional: add rounded corners */
+    margin: 20px 0; /* Add margin to separate from other sections */
+  }
+  
+  .collapsible {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .arrow {
+    transition: transform 0.2s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .content.open {
+    max-height: 1000px; /* Adjust as needed */
+  }
+  
+  .job {
+    display: inline-block; /* Ensure job entries are displayed side by side */
+    width: calc(50% - 10px); /* Adjust width to fit two entries in a row with spacing */
+    padding: 10px; /* Add padding to separate job entries */
+    margin-right: 20px; /* Add margin between job entries */
+    border: 1px solid #ddd; /* Add border around each job entry */
+    border-radius: 5px; /* Optional: add rounded corners */
+    text-align: left; /* Ensure text is aligned properly */
+    vertical-align: top; /* Align job entries at the top */
+  }
+  
+  .job:last-child {
+    margin-right: 0; /* Remove right margin from last job entry */
+  }
+  
+  .job h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .job h4 {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .job p {
+    margin: 5px 0;
+    color: #333;
+  }
+  

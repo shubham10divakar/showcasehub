@@ -5,6 +5,7 @@ import Introduction from './Introduction';
 import WorkExperience from './WorkExperience';
 import Education from './Education';
 import Skills from './Skills'
+import ProjectList from './ProjectsInPortfolio'
 
 export default function Portfolio() {
 
@@ -15,6 +16,7 @@ export default function Portfolio() {
       <WorkExperience />
       <Education />
       <Skills />
+      <ProjectList />
     </div>
   );
 
