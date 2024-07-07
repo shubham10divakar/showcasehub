@@ -1,8 +1,10 @@
 import React from 'react';
-import '../../App.css';
 import { Chrono } from "react-chrono";
 import Timeline from './Timeline';
 import Introduction from './Introduction';
+import WorkExperience from './WorkExperience';
+import Education from './Education';
+import Skills from './Skills'
 
 export default function Portfolio() {
 
@@ -10,6 +12,9 @@ export default function Portfolio() {
   return (
     <div>
       <Introduction />
+      <WorkExperience />
+      <Education />
+      <Skills />
     </div>
   );
 
