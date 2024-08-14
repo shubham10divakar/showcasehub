@@ -5,6 +5,9 @@ import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import Projects from '../ProjectCards';
 import HeroSectionNew from '../HeroSectionNew.js';
+import Modal from './Modal';
+import { useState } from 'react';
+import DinoGamePlayer from './DinoGame.js';
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);   // Round up the minimum value
@@ -13,7 +16,10 @@ function getRandomInt(min, max) {
 }
 
 function Home() {
-  //Example condition (replace with your actual condition)
+  // Set the initial state to true to show the modal by default
+  const [isModalOpen, setIsModalOpen] = useState(true);
+
+  const closeModal = () => setIsModalOpen(false);
 
   const randomInt = getRandomInt(1, 100); // Generates a random integer between 1 and 100 (inclusive)
   //console.log(randomInt); // Output a random integer between 1 and 
@@ -32,6 +38,11 @@ function Home() {
     return (
       <>
         <HeroSection />
+        <div>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <DinoGamePlayer />
+      </Modal>
+    </div>
         <Projects />
         <Footer />
       </>
@@ -40,6 +51,11 @@ function Home() {
     return (
       <>
         <HeroSectionNew />
+        <div>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <DinoGamePlayer />
+      </Modal>
+    </div>
         <Projects />
         <Footer />
       </>
