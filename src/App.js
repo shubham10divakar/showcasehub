@@ -19,6 +19,8 @@ import AwardsPage from './components/AwardsPage';
 import AwardDetailsPage from './components/AwardDetailsPage';
 import PublicationsList from './components/pages/PublicationsList';
 import PublicationDetail from './components/pages/PublicationDetail';
+import GamesPage from './components/pages/GamesPage';
+import DinoGamePlayer from './components/pages/DinoGame';
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
            <Route path='/projectdetails/:id' element={<ProjectDetails />} />
            <Route path="/awards" element={<AwardsPage />} />
            <Route path="/awards/:id" element={<AwardDetailsPage />} />
+           <Route path="/playgames" element={<GamesPage />} />
+           <Route path="/games/dino" element={<DinoGamePlayer />} />
            <Route path="*" element={<NotFound />} />
          </Route>
        </Routes>

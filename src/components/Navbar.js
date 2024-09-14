@@ -60,6 +60,15 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
+                to='/playgames'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                PlayGames
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
                 to='/aboutme'
                 className='nav-links'
                 onClick={closeMobileMenu}
@@ -85,8 +94,6 @@ function Navbar() {
                 Publications
               </Link>
             </li>
-            
-
           </ul>
                 {button && <Button buttonStyle='btn--outline'>Awards</Button>}
         </div>
