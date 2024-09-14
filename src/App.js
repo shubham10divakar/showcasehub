@@ -33,10 +33,6 @@ function App() {
            <Route path="/portfolio" element={<Portfolio />} />
            <Route path="/publications" element={<PublicationsList />} />
            <Route path="/publications/:id" element={<PublicationDetail />} />
-           {/*<Route path="/SignUp" element={<SignUp />} />
-           <Route path='/awards' element={<Awards />} /> */}
-           {/* <Route path='/projects' element={<Projects />} /> */}
-           {/* <Route path='/products/:id' element={<Products />} /> */}
            <Route path='/myworks' element={<MyWorks />} />
            <Route path='/projectdetails/:id' element={<ProjectDetails />} />
            <Route path="/awards" element={<AwardsPage />} />

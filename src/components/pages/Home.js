@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../App.css';
 import Cards from '../Cards';
 import HeroSection from '../HeroSection';
@@ -19,10 +19,18 @@ function Home() {
   // Set the initial state to true to show the modal by default
   const [isModalOpen, setIsModalOpen] = useState(true);
 
+  //state to store the random integer to avoid regenerating it and casuing rerender
+  const [randomInt, setRandomInt] = useState(null);
+
   const closeModal = () => setIsModalOpen(false);
 
-  const randomInt = getRandomInt(1, 100); // Generates a random integer between 1 and 100 (inclusive)
-  //console.log(randomInt); // Output a random integer between 1 and 
+  //const randomInt = getRandomInt(1, 100); // Generates a random integer between 1 and 100 (inclusive)
+  //console.log(randomInt); // Output a random integer between 1 and
+  
+  useEffect(()=>{
+    const randomValue = getRandomInt(1,100);
+    setRandomInt(randomValue);
+  },[]); // Empty dependency array ensures it runs only on the initial render
   
   var shouldShowHero = true; // Replace with your condition here
 
