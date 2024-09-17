@@ -38,7 +38,7 @@ function Navbar() {
           alt="Subham Divakar"
           src={pic} // Replace with the actual path to your profile picture
           sx={{ width: 60, height: 60 }} // Adjust size as needed
-          //className='avatar'
+          className='avatar'
         />
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
