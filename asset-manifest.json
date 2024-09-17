@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/showcasehub/static/css/main.8d769e77.css",
-    "main.js": "/showcasehub/static/js/main.f4526879.js",
+    "main.css": "/showcasehub/static/css/main.f2e3f924.css",
+    "main.js": "/showcasehub/static/js/main.5bbc6466.js",
     "static/js/453.481d806d.chunk.js": "/showcasehub/static/js/453.481d806d.chunk.js",
     "static/media/innovideoplayback2.mp4": "/showcasehub/static/media/innovideoplayback2.d57f4234446e3911a02a.mp4",
     "static/media/1.JPG": "/showcasehub/static/media/1.8442844f13129a5c8bd9.JPG",
@@ -34,12 +34,12 @@
     "static/media/python-logo.png": "/showcasehub/static/media/python-logo.c828af7d0a97f43e991f.png",
     "static/media/logo.svg": "/showcasehub/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/showcasehub/index.html",
-    "main.8d769e77.css.map": "/showcasehub/static/css/main.8d769e77.css.map",
-    "main.f4526879.js.map": "/showcasehub/static/js/main.f4526879.js.map",
+    "main.f2e3f924.css.map": "/showcasehub/static/css/main.f2e3f924.css.map",
+    "main.5bbc6466.js.map": "/showcasehub/static/js/main.5bbc6466.js.map",
     "453.481d806d.chunk.js.map": "/showcasehub/static/js/453.481d806d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d769e77.css",
-    "static/js/main.f4526879.js"
+    "static/css/main.f2e3f924.css",
+    "static/js/main.5bbc6466.js"
   ]
 }
