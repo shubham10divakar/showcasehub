@@ -35,7 +35,7 @@ function HeroSection() {
 
       <p className='hero-description'>
         Building cloud products at Persistent Systems · Published researcher in AI/ML ·
-        Open-source Python library author · 2× Hackathon champion
+        Open-source Python library author · 2× Hackathon champion · 100+ Google Scholar citations
       </p>
 
       <div className='hero-stats'>
@@ -47,6 +47,16 @@ function HeroSection() {
           <span className='hero-stat-number'>2</span>
           <span className='hero-stat-label'>Publications</span>
         </div>
+        <a
+          className='hero-stat hero-stat-link'
+          href='https://scholar.google.com/citations?user=44ecZj0AAAAJ&hl=en&authuser=1'
+          target='_blank'
+          rel='noopener noreferrer'
+          title='View Google Scholar profile'
+        >
+          <span className='hero-stat-number hero-stat-citations'>100+</span>
+          <span className='hero-stat-label'>Scholar Citations</span>
+        </a>
         <div className='hero-stat'>
           <span className='hero-stat-number'>5+</span>
           <span className='hero-stat-label'>Projects</span>

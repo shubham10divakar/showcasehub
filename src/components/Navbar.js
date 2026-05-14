@@ -20,6 +20,7 @@ function Navbar() {
     { to: '/myworks', label: 'My Works' },
     { to: '/portfolio', label: 'Portfolio' },
     { to: '/publications', label: 'Publications' },
+    { to: '/apps', label: 'Apps' },
     { to: '/playgames', label: 'Play Games' },
     { to: '/aboutme', label: 'About Me' },
   ];

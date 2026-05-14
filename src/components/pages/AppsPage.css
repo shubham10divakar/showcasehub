@@ -1,0 +1,249 @@
+.apps-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 4rem 2rem 2rem;
+}
+
+.apps-section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.apps-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(63, 185, 80, 0.1);
+  border: 1px solid rgba(63, 185, 80, 0.3);
+  color: var(--accent-green);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.apps-badge-games {
+  background: rgba(88, 166, 255, 0.1);
+  border-color: rgba(88, 166, 255, 0.3);
+  color: var(--accent);
+}
+
+.apps-section-header h1,
+.apps-section-header h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.apps-section-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Android app cards */
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.app-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.app-card:hover {
+  border-color: var(--accent-green);
+  transform: translateY(-4px);
+  text-decoration: none;
+}
+
+.app-card-image-wrap {
+  position: relative;
+}
+
+.app-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.app-card-year {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(13, 17, 23, 0.75);
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.app-card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.app-card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.app-tag {
+  background: rgba(88, 166, 255, 0.08);
+  color: var(--accent);
+  border: 1px solid rgba(88, 166, 255, 0.2);
+  padding: 2px 9px;
+  border-radius: 12px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.app-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.app-card-desc {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.app-card-cta {
+  color: var(--accent-green);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+/* Placeholder card */
+.app-card-placeholder {
+  background: var(--bg-secondary);
+  border: 1px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  min-height: 220px;
+}
+
+.app-card-placeholder:hover {
+  border-color: var(--border);
+  transform: none;
+}
+
+.app-placeholder-icon {
+  font-size: 2.5rem;
+}
+
+.app-card-placeholder p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Divider */
+.apps-divider {
+  max-width: 1000px;
+  margin: 4rem auto;
+  height: 1px;
+  background: var(--border);
+}
+
+/* Games grid */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mini-game-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.mini-game-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.mini-game-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.mini-game-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.mini-game-card p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+
+.mini-play-btn {
+  margin-top: 1rem;
+  background: var(--accent);
+  color: #0d1117;
+  border: none;
+  padding: 9px 20px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  align-self: flex-start;
+}
+
+.mini-play-btn:hover {
+  opacity: 0.85;
+}
+
+.mini-play-btn:disabled {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+  opacity: 1;
+}
