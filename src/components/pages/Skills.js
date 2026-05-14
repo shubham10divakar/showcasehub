@@ -1,37 +1,51 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Skills.css';
+import './WorkExperience.css';
+
+const skillGroups = [
+  {
+    title: 'Languages',
+    tags: ['Java', 'Python'],
+  },
+  {
+    title: 'Frontend',
+    tags: ['React', 'Vue.js', 'HTML', 'CSS'],
+  },
+  {
+    title: 'Backend & DB',
+    tags: ['Java 8', 'Spring', 'MySQL'],
+  },
+  {
+    title: 'Cloud',
+    tags: ['GCP', 'AWS', 'Azure'],
+  },
+  {
+    title: 'Python Libraries (PyPI)',
+    pip: true,
+    tags: ['pip install sdcfc', 'pip install sdscmt'],
+  },
+];
 
 function Skills() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleCollapse = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <section id="work-experience" className="work-experience-section">
-      <button className="collapsible" onClick={toggleCollapse}>
-        Skills
-        <span className={`arrow ${isOpen ? 'open' : ''}`}>▼</span>
-      </button>
-      <div className={`content ${isOpen ? 'open' : ''}`}>
-        <div className="job">
-          <h3></h3>
-          <h4>FullStack Developer</h4>
-          <p>Languages: Java, Python</p>
-          <p>UI: React, Vue.js</p>
-          <p>DB: MySql</p>
-          <p>Cloud: GCP, AWS, Azure</p>
-        </div>
-        <div className="job">
-          <h3></h3>
-          <h4>Developer of Python Libraries</h4>
-          <p>Languages: Python</p>
-          <p>Projects: Available on pip</p>
-          <p>pip install sdcfc</p>
-          <p>pip instal sdcmt</p>
-        </div>
-        {/* Add more job entries as needed */}
+    <section className='skills-section'>
+      <h2 className='section-block-title'>Skills</h2>
+      <div className='skills-grid'>
+        {skillGroups.map((group, i) => (
+          <div className='skills-group' key={i}>
+            <p className='skills-group-title'>{group.title}</p>
+            <div className='skills-tags'>
+              {group.tags.map((tag, j) => (
+                <span
+                  key={j}
+                  className={`skill-tag${group.pip ? ' skill-tag-pip' : ''}`}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

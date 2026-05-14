@@ -1,47 +1,40 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './WorkExperience.css';
 
 function Education() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleCollapse = () => {
-    setIsOpen(!isOpen);
-  };
+  const entries = [
+    {
+      degree: 'B.Tech — Electronics & Telecommunication',
+      institute: 'CV Raman Global University',
+      duration: '2016 – 2020',
+      score: 'CGPA: 7.8',
+    },
+    {
+      degree: 'XII — Science',
+      institute: 'MNPS JSR',
+      duration: '2014 – 2015',
+      score: '88%',
+    },
+  ];
 
   return (
-    <section id="work-experience" className="work-experience-section">
-      <button className="collapsible" onClick={toggleCollapse}>
-        Education
-        <span className={`arrow ${isOpen ? 'open' : ''}`}>▼</span>
-      </button>
-      <div className={`content ${isOpen ? 'open' : ''}`}>
-        <div className="job">
-          <h3>B.TECH</h3>
-          <h4>CV Raman Global University</h4>
-          <p>Duration: 2016 - 2020</p>
-          <p>Branch: Electronics and Telecommunication</p>
-          <p>CGPA: 7.8</p>
-        </div>
-        <div className="job">
-          <h3>XII</h3>
-          <h4>MNPS JSR</h4>
-          <p>Stream: Science</p>
-          <p>Duration: 2014 - 2015</p>
-          <p>Percentile: 88%</p>
-        </div>
-        {/* <div className="job">
-          <h3>Job Title 2</h3>
-          <h4>Company Name 2</h4>
-          <p>Duration: Start Date - End Date</p>
-          <p>Responsibilities and achievements...</p>
-        </div>
-        <div className="job">
-          <h3>Job Title 3</h3>
-          <h4>Company Name 3</h4>
-          <p>Duration: Start Date - End Date</p>
-          <p>Responsibilities and achievements...</p>
-        </div> */}
-        {/* Add more job entries as needed */}
+    <section className='section-block'>
+      <h2 className='section-block-title'>Education</h2>
+      <div className='timeline'>
+        {entries.map((e, i) => (
+          <div className='timeline-item' key={i}>
+            <div className='timeline-header'>
+              <div>
+                <h3 className='timeline-role'>{e.degree}</h3>
+                <p className='timeline-company'>{e.institute}</p>
+              </div>
+              <span className='timeline-duration'>{e.duration}</span>
+            </div>
+            <div className='timeline-tags'>
+              <span className='timeline-tag'>{e.score}</span>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

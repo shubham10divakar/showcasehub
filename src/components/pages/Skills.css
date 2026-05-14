@@ -1,76 +1,57 @@
-.work-experience-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 2px solid #333; /* Add border here */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin: 20px 0; /* Add margin to separate from other sections */
-  }
-  
-  .collapsible {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    padding: 10px 20px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.2em;
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .collapsible:hover {
-    background-color: #555;
-  }
-  
-  .arrow {
-    transition: transform 0.2s ease;
-  }
-  
-  .arrow.open {
-    transform: rotate(180deg);
-  }
-  
-  .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  
-  .content.open {
-    max-height: 1000px; /* Adjust as needed */
-  }
-  
-  .job {
-    display: inline-block; /* Ensure job entries are displayed side by side */
-    width: calc(50% - 10px); /* Adjust width to fit two entries in a row with spacing */
-    padding: 10px; /* Add padding to separate job entries */
-    margin-right: 20px; /* Add margin between job entries */
-    border: 1px solid #ddd; /* Add border around each job entry */
-    border-radius: 5px; /* Optional: add rounded corners */
-    text-align: left; /* Ensure text is aligned properly */
-    vertical-align: top; /* Align job entries at the top */
-  }
-  
-  .job:last-child {
-    margin-right: 0; /* Remove right margin from last job entry */
-  }
-  
-  .job h3 {
-    margin: 0;
-    color: #333;
-  }
-  
-  .job h4 {
-    margin: 5px 0;
-    color: #666;
-  }
-  
-  .job p {
-    margin: 5px 0;
-    color: #333;
-  }
-  
+.skills-section {
+  padding: 0 2rem 2rem;
+  max-width: 860px;
+  margin: 0 auto 1.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.skills-group {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.skills-group-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 0.75rem 0;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-tag {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.skill-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.skill-tag-pip {
+  background: rgba(63, 185, 80, 0.08);
+  border-color: rgba(63, 185, 80, 0.25);
+  color: var(--accent-green);
+  font-family: monospace;
+  font-size: 0.78rem;
+}

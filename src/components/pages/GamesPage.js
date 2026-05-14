@@ -1,4 +1,3 @@
-// src/components/GamesPage.js
 import React, { useState } from 'react';
 import './GamesPage.css';
 import DinoGamePlayer from './DinoGame';
@@ -6,55 +5,56 @@ import Modal from './Modal';
 
 const games = [
   {
-    title: 'Mario Game',
-    description: 'A classic Mario game with exciting levels.',
-    id: 'mario', // Unique identifier for each game
+    title: 'Dino Game',
+    description: 'The classic Chrome offline dinosaur endless runner. Press space to jump.',
+    id: 'dino',
+    icon: '🦕',
+    available: true,
   },
   {
-    title: 'Dino Game',
-    description: 'An endless runner game with a dinosaur character.',
-    id: 'dino', // Unique identifier for each game
+    title: 'Mario Game',
+    description: 'Classic side-scrolling platformer. Coming soon!',
+    id: 'mario',
+    icon: '🍄',
+    available: false,
   },
   {
     title: 'Temple Run',
-    description: 'An endless temple runner game.',
-    id: 'templerun', // Unique identifier for each game
+    description: 'Endless temple runner. Coming soon!',
+    id: 'templerun',
+    icon: '🏛️',
+    available: false,
   },
-  // Add more games here
 ];
 
 const GamesPage = () => {
   const [modalGameId, setModalGameId] = useState(null);
 
-  const openModal = (gameId) => {
-    setModalGameId(gameId);
-  };
-
-  const closeModal = () => {
-    setModalGameId(null);
-  };
+  const openModal = (gameId) => setModalGameId(gameId);
+  const closeModal = () => setModalGameId(null);
 
   const renderModalContent = () => {
-    if (modalGameId === 'dino') {
-      return <DinoGamePlayer />;
-    } else if (modalGameId === 'mario') {
-      return <> Game Is In development </>;
-    } else {
-        return <>Game Is In Development</>;
-    }
-    // You can add more conditions for other games here
-    return null;
+    if (modalGameId === 'dino') return <DinoGamePlayer />;
+    return <p style={{ color: 'var(--text-secondary)', padding: '2rem' }}>Game is in development.</p>;
   };
 
   return (
-    <div className="games-page">
-      <h1>My Games</h1>
-      <div className="games-list">
+    <div className='games-page'>
+      <h1>Play Games</h1>
+      <p className='games-subtitle'>Take a break — mini-games built into the portfolio</p>
+      <div className='games-list'>
         {games.map((game) => (
-          <div key={game.id} className="game-card">
+          <div key={game.id} className='game-card'>
+            <div className='game-card-icon'>{game.icon}</div>
             <h2>{game.title}</h2>
             <p>{game.description}</p>
-            <button onClick={() => openModal(game.id)} className="play-button">Play Now</button>
+            <button
+              onClick={() => openModal(game.id)}
+              className='play-button'
+              disabled={!game.available}
+            >
+              {game.available ? 'Play Now' : 'Coming Soon'}
+            </button>
           </div>
         ))}
       </div>

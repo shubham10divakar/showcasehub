@@ -1,76 +1,99 @@
-.work-experience-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 2px solid #333; /* Add border here */
-    border-radius: 10px; /* Optional: add rounded corners */
-    margin: 20px 0; /* Add margin to separate from other sections */
-  }
-  
-  .collapsible {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    padding: 10px 20px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.2em;
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .collapsible:hover {
-    background-color: #555;
-  }
-  
-  .arrow {
-    transition: transform 0.2s ease;
-  }
-  
-  .arrow.open {
-    transform: rotate(180deg);
-  }
-  
-  .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  
-  .content.open {
-    max-height: 1000px; /* Adjust as needed */
-  }
-  
-  .job {
-    display: inline-block; /* Ensure job entries are displayed side by side */
-    width: calc(50% - 10px); /* Adjust width to fit two entries in a row with spacing */
-    padding: 10px; /* Add padding to separate job entries */
-    margin-right: 20px; /* Add margin between job entries */
-    border: 1px solid #ddd; /* Add border around each job entry */
-    border-radius: 5px; /* Optional: add rounded corners */
-    text-align: left; /* Ensure text is aligned properly */
-    vertical-align: top; /* Align job entries at the top */
-  }
-  
-  .job:last-child {
-    margin-right: 0; /* Remove right margin from last job entry */
-  }
-  
-  .job h3 {
-    margin: 0;
-    color: #333;
-  }
-  
-  .job h4 {
-    margin: 5px 0;
-    color: #666;
-  }
-  
-  .job p {
-    margin: 5px 0;
-    color: #333;
-  }
-  
+.section-block {
+  padding: 2rem;
+  max-width: 860px;
+  margin: 0 auto 1.5rem;
+}
+
+.section-block-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 1.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-block-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timeline-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  transition: border-left-color 0.2s;
+}
+
+.timeline-item:hover {
+  border-left-color: var(--accent-green);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-role {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.timeline-company {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0.2rem 0 0.4rem 0;
+}
+
+.timeline-duration {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.timeline-desc {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0 0 0.75rem 0;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.timeline-tag {
+  background: rgba(88, 166, 255, 0.08);
+  color: var(--accent);
+  border: 1px solid rgba(88, 166, 255, 0.2);
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}

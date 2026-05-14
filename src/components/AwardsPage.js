@@ -1,59 +1,34 @@
-// AwardsPage.js
-
 import React from 'react';
-import { Typography } from '@mui/material';
-import AwardsList from '../components/AwardsList';
+import { Link } from 'react-router-dom';
 import awards from './pages/AwardsListJS';
-
-// const awards = [
-//   {
-//     id: 1,
-//     title: 'Award 1',
-//     description: 'Description of Award 1.',
-//     image: '/images/award1.jpg',
-//     gallery: ['/images/award1_1.jpg', '/images/award1_2.jpg', '/images/award1_3.jpg'],
-//   },
-//   {
-//     id: 2,
-//     title: 'Award 2',
-//     description: 'Description of Award 2.',
-//     image: '/images/award2.jpg',
-//     gallery: ['/images/award2_1.jpg', '/images/award2_2.jpg'],
-//   },
-//   {
-//     id: 3,
-//     title: 'Award 3',
-//     description: 'Description of Award 3.',
-//     image: '/images/award3.jpg',
-//     gallery: ['/images/award3_1.jpg', '/images/award3_2.jpg', '/images/award3_3.jpg'],
-//   },
-//   {
-//     id: 4,
-//     title: 'Award 4',
-//     description: 'Description of Award 4.',
-//     gallery: ['/images/award3_1.jpg', '/images/award3_2.jpg', '/images/award3_3.jpg'],
-//   },
-//   {
-//     id: 5,
-//     title: 'Award 5',
-//     description: 'Description of Award 5.',
-//     gallery: ['/images/award3_1.jpg', '/images/award3_2.jpg', '/images/award3_3.jpg'],
-//   },
-//   {
-//     id: 6,
-//     title: 'Award 6',
-//     description: 'Description of Award 6.',
-//     gallery: ['/images/award3_1.jpg', '/images/award3_2.jpg', '/images/award3_3.jpg'],
-//   },
-// ];
+import Footer from './Footer';
+import './AwardsPage.css';
 
 const AwardsPage = () => {
   return (
-    <div>
-      <Typography variant="h3" gutterBottom>
-        Awards
-      </Typography>
-      <AwardsList awards={awards} />
+    <div className='awards-page'>
+      <div className='awards-header'>
+        <h1>Awards & Recognition</h1>
+        <p>Hackathon victories and achievements</p>
+      </div>
+      <div className='awards-grid'>
+        {awards.map((award) => (
+          <Link key={award.id} to={`/awards/${award.id}`} className='award-card'>
+            <div className='award-card-image-wrap'>
+              <img src={award.image} alt={award.title} className='award-card-image' />
+              <span className='award-card-badge'>
+                <i className='fas fa-trophy' /> Winner
+              </span>
+            </div>
+            <div className='award-card-body'>
+              <h2 className='award-card-title'>{award.title}</h2>
+              <p className='award-card-desc'>{award.description}</p>
+              <span className='award-card-link'>View gallery →</span>
+            </div>
+          </Link>
+        ))}
+      </div>
+      <Footer />
     </div>
   );
 };
