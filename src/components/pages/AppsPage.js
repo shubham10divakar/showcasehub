@@ -125,6 +125,28 @@ const AppsPage = () => {
         )}
       </Modal>
 
+      {/* Privacy Policy Section */}
+      <div className='apps-divider' />
+
+      <div className='apps-section-header'>
+        <div className='apps-badge apps-badge-policy'>
+          <i className='fas fa-shield-alt' /> App Privacy
+        </div>
+        <h2>Privacy Policies</h2>
+        <p>Privacy policies for published apps and games</p>
+      </div>
+
+      <div className='policy-grid'>
+        <Link to='/lostbirdprivacypolicy' className='policy-card'>
+          <div className='policy-card-icon'>🐦</div>
+          <div className='policy-card-body'>
+            <h3>Lost Bird</h3>
+            <p>Android game — Firebase auth, leaderboard, AdMob rewarded ads</p>
+            <span className='policy-card-cta'>Read Privacy Policy →</span>
+          </div>
+        </Link>
+      </div>
+
       <Footer />
     </div>
   );
