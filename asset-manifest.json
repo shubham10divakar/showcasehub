@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/showcasehub/static/css/main.606bd9c6.css",
-    "main.js": "/showcasehub/static/js/main.18a54abb.js",
+    "main.css": "/showcasehub/static/css/main.592428bc.css",
+    "main.js": "/showcasehub/static/js/main.70c829df.js",
     "static/js/453.481d806d.chunk.js": "/showcasehub/static/js/453.481d806d.chunk.js",
     "static/media/1.JPG": "/showcasehub/static/media/1.8442844f13129a5c8bd9.JPG",
     "static/media/21.JPG": "/showcasehub/static/media/21.ab5fd51dde139f1d432d.JPG",
@@ -25,12 +25,12 @@
     "static/media/plantdiseasedetection.jpg": "/showcasehub/static/media/plantdiseasedetection.515d1b226702cbc13879.jpg",
     "static/media/python-logo.png": "/showcasehub/static/media/python-logo.c828af7d0a97f43e991f.png",
     "index.html": "/showcasehub/index.html",
-    "main.606bd9c6.css.map": "/showcasehub/static/css/main.606bd9c6.css.map",
-    "main.18a54abb.js.map": "/showcasehub/static/js/main.18a54abb.js.map",
+    "main.592428bc.css.map": "/showcasehub/static/css/main.592428bc.css.map",
+    "main.70c829df.js.map": "/showcasehub/static/js/main.70c829df.js.map",
     "453.481d806d.chunk.js.map": "/showcasehub/static/js/453.481d806d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.606bd9c6.css",
-    "static/js/main.18a54abb.js"
+    "static/css/main.592428bc.css",
+    "static/js/main.70c829df.js"
   ]
 }
