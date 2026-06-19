@@ -14,6 +14,7 @@ import PublicationDetail from './components/pages/PublicationDetail';
 import GamesPage from './components/pages/GamesPage';
 import DinoGamePlayer from './components/pages/DinoGame';
 import AppsPage from './components/pages/AppsPage';
+import LostBirdPrivacyPolicy from './components/pages/LostBirdPrivacyPolicy';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/playgames" element={<GamesPage />} />
         <Route path="/games/dino" element={<DinoGamePlayer />} />
         <Route path="/apps" element={<AppsPage />} />
+        <Route path="/lostbirdprivacypolicy" element={<LostBirdPrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
