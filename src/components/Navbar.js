@@ -16,7 +16,7 @@ function Navbar() {
   }, [location]);
 
   const navLinks = [
-    { to: '/showcasehub', label: 'Home' },
+    { to: '/', label: 'Home' },
     { to: '/myworks', label: 'My Works' },
     { to: '/portfolio', label: 'Portfolio' },
     { to: '/publications', label: 'Publications' },
@@ -28,7 +28,7 @@ function Navbar() {
   return (
     <nav className='navbar'>
       <div className='navbar-container'>
-        <Link to='/showcasehub' className='navbar-brand' onClick={closeMobileMenu}>
+        <Link to='/' className='navbar-brand' onClick={closeMobileMenu}>
           <Avatar alt="Subham Divakar" src={pic} sx={{ width: 38, height: 38 }} />
           <span className='navbar-brand-name'>Subham <span>Divakar</span></span>
         </Link>

@@ -6,7 +6,7 @@
     <script>
       // SPA redirect for GitHub Pages
       // Encodes the full path into a query string so index.html can restore it
-      var segmentCount = 1; // number of path segments in the repo name (/showcasehub = 1)
+      var segmentCount = 0; // root-domain deployment (subhamdivakar.com/), no repo path segment
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
