@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { Link } from 'react-router-dom';
 import './HeroSection.css';
+import Scene3DLayer from './three/Scene3DLayer';
+
+// Code-split: the Three.js bundle only loads for capable, motion-OK devices.
+const NeuralScene = lazy(() => import('./three/NeuralScene'));
 
 const roles = [
   'Senior Software Engineer',
@@ -22,6 +26,15 @@ function HeroSection() {
 
   return (
     <div className='hero-container'>
+      <Scene3DLayer fallback={null}>
+        {({ isMobile, frameloop }) => (
+          <Suspense fallback={null}>
+            <NeuralScene isMobile={isMobile} frameloop={frameloop} />
+          </Suspense>
+        )}
+      </Scene3DLayer>
+
+      <div className='hero-content'>
       <div className='hero-badge'>
         <span className='hero-badge-dot' />
         Available for opportunities
@@ -74,6 +87,7 @@ function HeroSection() {
         <Link to='/myworks' className='hero-btn-secondary'>
           My Projects
         </Link>
+      </div>
       </div>
 
       <div className='hero-scroll-hint'>

@@ -1,0 +1,147 @@
+.vision-section {
+  background: var(--bg-primary);
+  padding: 4rem 2rem 5rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.vision-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(121, 192, 255, 0.1);
+  border: 1px solid rgba(121, 192, 255, 0.3);
+  color: var(--accent-cyan);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.vision-badge-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent-cyan);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.vision-title {
+  color: var(--text-primary);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.5px;
+}
+
+.vision-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+}
+
+.vision-stage {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 10;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(88, 166, 255, 0.08), transparent 70%),
+    var(--bg-secondary);
+}
+
+.vision-stage canvas {
+  display: block;
+}
+
+.vision-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.vision-loading-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  animation: pulse 1.2s infinite;
+}
+
+/* ---- Static fallback ---- */
+.vision-fallback {
+  position: absolute;
+  inset: 0;
+}
+
+.vision-fallback-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vision-fallback-pill {
+  position: absolute;
+  font: 600 11px/1 -apple-system, 'Segoe UI', Roboto, sans-serif;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: rgba(13, 17, 23, 0.88);
+}
+
+.vision-fallback-pill--blight {
+  top: 13%;
+  left: 3%;
+  color: #f85149;
+  border: 1px solid #f85149;
+}
+
+.vision-fallback-pill--scorch {
+  top: 30%;
+  left: 66%;
+  color: #d29922;
+  border: 1px solid #d29922;
+}
+
+.vision-actions {
+  margin-top: 2rem;
+}
+
+.vision-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #0d1117;
+  padding: 11px 26px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.vision-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: #0d1117;
+}
+
+@media screen and (max-width: 600px) {
+  .vision-stage {
+    aspect-ratio: 4 / 3;
+  }
+}

@@ -1,9 +1,13 @@
 .intro-section {
   padding: 4rem 2rem 2rem;
   background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
 }
 
 .intro-inner {
+  position: relative;
+  z-index: 1;
   max-width: 860px;
   margin: 0 auto;
   display: flex;

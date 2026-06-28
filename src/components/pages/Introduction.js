@@ -2,10 +2,12 @@ import React from 'react';
 import './Introduction.css';
 import profilePic from '../../images/channelLogo.png';
 import { Avatar } from '@mui/material';
+import AmbientPointCloud from '../three/AmbientPointCloud';
 
 function Introduction() {
   return (
     <section className='intro-section'>
+      <AmbientPointCloud color='#58a6ff' />
       <div className='intro-inner'>
         <Avatar
           alt="Subham Divakar"

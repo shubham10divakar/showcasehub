@@ -21,6 +21,17 @@
   background-image: radial-gradient(circle, rgba(88, 166, 255, 0.04) 1px, transparent 1px);
   background-size: 40px 40px;
   pointer-events: none;
+  z-index: 1;
+}
+
+/* Hero text/buttons sit above the 3D background layer (z-index: 0). */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .hero-badge {
@@ -193,6 +204,7 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
   color: var(--text-secondary);
   font-size: 0.75rem;
   display: flex;

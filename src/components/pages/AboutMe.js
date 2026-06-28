@@ -2,10 +2,12 @@ import React from 'react';
 import './AboutMe.css';
 import { Avatar } from '@mui/material';
 import pic from '../../images/channelLogo.png';
+import AmbientPointCloud from '../three/AmbientPointCloud';
 
 const AboutMe = () => {
   return (
     <div className='aboutme-page'>
+      <AmbientPointCloud color='#79c0ff' />
       <div className='aboutme-card'>
         <Avatar
           alt="Subham Divakar"
