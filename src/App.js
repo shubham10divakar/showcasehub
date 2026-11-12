@@ -1,43 +1,56 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import Home from './components/pages/Home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AboutMe from './components/pages/AboutMe';
-import Portfolio from './components/pages/Portfolio';
-import ProjectDetails from './components/pages/ProjectDetails';
-import NotFound from './components/pages/NotFound';
-import MyWorks from './components/pages/MyWorks';
-import AwardsPage from './components/AwardsPage';
-import AwardDetailsPage from './components/AwardDetailsPage';
-import PublicationsList from './components/pages/PublicationsList';
-import PublicationDetail from './components/pages/PublicationDetail';
-import GamesPage from './components/pages/GamesPage';
-import DinoGamePlayer from './components/pages/DinoGame';
-import AppsPage from './components/pages/AppsPage';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import './site/site.css';
+import { ThemeProvider } from './site/theme';
+import Backdrop from './site/three/Backdrop';
+import { Nav, Footer } from './site/Layout';
+import Home from './site/pages/Home';
+import Research from './site/pages/Research';
+import OpenSource from './site/pages/OpenSource';
+import PdfDesk from './site/pages/PdfDesk';
+import Apps from './site/pages/Apps';
+import Games from './site/pages/Games';
+import Writing from './site/pages/Writing';
+import Achievements from './site/pages/Achievements';
+import About, { NotFound } from './site/pages/About';
 import LostBirdPrivacyPolicy from './components/pages/LostBirdPrivacyPolicy';
+
+const to = (path) => <Navigate to={path} replace />;
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/showcasehub" element={<Home />} />
-        <Route path="/aboutme" element={<AboutMe />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/publications" element={<PublicationsList />} />
-        <Route path="/publications/:id" element={<PublicationDetail />} />
-        <Route path='/myworks' element={<MyWorks />} />
-        <Route path='/projectdetails/:id' element={<ProjectDetails />} />
-        <Route path="/awards" element={<AwardsPage />} />
-        <Route path="/awards/:id" element={<AwardDetailsPage />} />
-        <Route path="/playgames" element={<GamesPage />} />
-        <Route path="/games/dino" element={<DinoGamePlayer />} />
-        <Route path="/apps" element={<AppsPage />} />
-        <Route path="/lostbirdprivacypolicy" element={<LostBirdPrivacyPolicy />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <Backdrop />
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/opensource" element={<OpenSource />} />
+          <Route path="/pdfdesk" element={<PdfDesk />} />
+          <Route path="/apps" element={<Apps />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="/writing" element={<Writing />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/about" element={<About />} />
+          {/* Linked from the Play Store listing: this URL must not change. */}
+          <Route path="/lostbirdprivacypolicy" element={<div className="privacy-wrap"><LostBirdPrivacyPolicy /></div>} />
+
+          {/* Old addresses keep working. */}
+          <Route path="/showcasehub" element={to('/')} />
+          <Route path="/publications/*" element={to('/research')} />
+          <Route path="/myworks" element={to('/opensource')} />
+          <Route path="/projectdetails/*" element={to('/opensource')} />
+          <Route path="/portfolio" element={to('/about')} />
+          <Route path="/aboutme" element={to('/about')} />
+          <Route path="/awards/*" element={to('/achievements')} />
+          <Route path="/playgames" element={to('/games')} />
+          <Route path="/games/dino" element={to('/games')} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </ThemeProvider>
   );
 }
 

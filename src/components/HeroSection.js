@@ -47,17 +47,18 @@ function HeroSection() {
       </div>
 
       <p className='hero-description'>
-        Building cloud products at Persistent Systems · Published researcher in AI/ML ·
-        Open-source Python library author · 2× Hackathon champion · 100+ Google Scholar citations
+        Full-Stack AI/ML Developer building intelligent cloud products at Persistent Systems ·
+        Published researcher in AI/ML · Open-source Python library author · 2× Hackathon champion ·
+        100+ Google Scholar citations
       </p>
 
       <div className='hero-stats'>
         <div className='hero-stat'>
-          <span className='hero-stat-number'>4+</span>
+          <span className='hero-stat-number'>5+</span>
           <span className='hero-stat-label'>Years Experience</span>
         </div>
         <div className='hero-stat'>
-          <span className='hero-stat-number'>2</span>
+          <span className='hero-stat-number'>5+</span>
           <span className='hero-stat-label'>Publications</span>
         </div>
         <a
