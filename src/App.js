@@ -13,6 +13,7 @@ import Games from './site/pages/Games';
 import Writing from './site/pages/Writing';
 import Achievements from './site/pages/Achievements';
 import About, { NotFound } from './site/pages/About';
+import HarvestHome, { HarvestPrivacy, HarvestDeleteAccount, HarvestSupport } from './site/pages/HarvestHome';
 import LostBirdPrivacyPolicy from './components/pages/LostBirdPrivacyPolicy';
 
 const to = (path) => <Navigate to={path} replace />;
@@ -33,6 +34,11 @@ function App() {
           <Route path="/writing" element={<Writing />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/about" element={<About />} />
+          {/* Harvest Home: the privacy and delete-account URLs go into Play Console, keep them stable. */}
+          <Route path="/harvesthome" element={<HarvestHome />} />
+          <Route path="/harvesthome/privacy" element={<HarvestPrivacy />} />
+          <Route path="/harvesthome/delete-account" element={<HarvestDeleteAccount />} />
+          <Route path="/harvesthome/support" element={<HarvestSupport />} />
           {/* Linked from the Play Store listing: this URL must not change. */}
           <Route path="/lostbirdprivacypolicy" element={<div className="privacy-wrap"><LostBirdPrivacyPolicy /></div>} />
 

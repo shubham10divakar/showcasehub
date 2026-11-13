@@ -127,6 +127,11 @@ export const packages = [
 
 export const apps = [
   {
+    id: 'com.subham.harvesthome', name: 'Harvest Home', icon: 'harvesthome', kind: 'Game',
+    desc: 'A cozy farming story through the seasons. Save Grandpa’s farm, bring the animals home and win the Harvest Fair.',
+    page: '/harvesthome', policy: '/harvesthome/privacy', soon: true,
+  },
+  {
     id: 'com.plantdoc.app', name: 'PlantDoc AI', icon: 'plantdoc', kind: 'App',
     desc: 'Point your phone at a leaf and get a disease diagnosis. The research papers, turned into something a farmer can use.',
   },

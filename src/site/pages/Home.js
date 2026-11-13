@@ -7,14 +7,15 @@ import pmHero from '../assets/pm-hero.jpg';
 import iconPlantdoc from '../assets/icon-plantdoc.png';
 import iconLostbird from '../assets/icon-lostbird.png';
 import iconFreeaiagent from '../assets/icon-freeaiagent.png';
+import iconHarvesthome from '../assets/icon-harvesthome.png';
 
-export const appIcons = { plantdoc: iconPlantdoc, lostbird: iconLostbird, freeaiagent: iconFreeaiagent };
+export const appIcons = { plantdoc: iconPlantdoc, lostbird: iconLostbird, freeaiagent: iconFreeaiagent, harvesthome: iconHarvesthome };
 
 const stats = [
   { n: `${scholar.citations}`, label: 'Scholar citations', to: '/research' },
   { n: `${papers.length}`, label: 'Research papers', to: '/research' },
   { n: `${packages.length}`, label: 'PyPI packages', to: '/opensource' },
-  { n: `${apps.length}`, label: 'Play Store apps', to: '/apps' },
+  { n: `${apps.filter((a) => !a.soon).length}`, label: 'Play Store apps', to: '/apps' },
   { n: '2', label: 'National hackathon wins', to: '/achievements' },
 ];
 
@@ -158,11 +159,19 @@ export default function Home() {
         <div className="grid-3">
           {apps.map((a, i) => (
             <Reveal key={a.id} delay={i * 80}>
-              <Ext href={playUrl(a.id)} className="card app-card">
-                <img src={appIcons[a.icon]} alt="" className="app-icon" />
-                <div><h3>{a.name}</h3><span className="tag">{a.kind}</span></div>
-                <p>{a.desc}</p>
-              </Ext>
+              {a.page ? (
+                <Link to={a.page} className="card app-card">
+                  <img src={appIcons[a.icon]} alt="" className="app-icon" />
+                  <div><h3>{a.name}</h3><span className="tag">{a.soon ? 'Coming soon' : a.kind}</span></div>
+                  <p>{a.desc}</p>
+                </Link>
+              ) : (
+                <Ext href={playUrl(a.id)} className="card app-card">
+                  <img src={appIcons[a.icon]} alt="" className="app-icon" />
+                  <div><h3>{a.name}</h3><span className="tag">{a.kind}</span></div>
+                  <p>{a.desc}</p>
+                </Ext>
+              )}
             </Reveal>
           ))}
         </div>

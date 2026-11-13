@@ -8,7 +8,7 @@ export default function Apps() {
   return (
     <main className="page">
       <PageHeader eyebrow="Apps" title="On the Google Play Store">
-        Three Android apps published under my own name: two that put my AI work on a phone, and one game.
+        Android apps published under my own name: two that put my AI work on a phone, a game, and Harvest Home on the way.
       </PageHeader>
 
       <div className="app-rows">
@@ -16,10 +16,13 @@ export default function Apps() {
           <Reveal key={a.id} delay={i * 90} className="card app-row">
             <img src={appIcons[a.icon]} alt={`${a.name} icon`} className="app-icon app-icon-lg" />
             <div className="app-row-body">
-              <div className="pkg-top"><h2>{a.name}</h2><span className="tag">{a.kind}</span></div>
+              <div className="pkg-top"><h2>{a.name}</h2><span className="tag">{a.soon ? `${a.kind} · Coming soon` : a.kind}</span></div>
               <p>{a.desc}</p>
               <div className="btn-row">
-                <Ext href={playUrl(a.id)} className="btn btn-primary"><i className="fab fa-google-play" /> Get it on Google Play</Ext>
+                {a.soon
+                  ? <span className="btn btn-primary hh-soon" aria-disabled="true"><i className="fab fa-google-play" /> Coming soon to Google Play</span>
+                  : <Ext href={playUrl(a.id)} className="btn btn-primary"><i className="fab fa-google-play" /> Get it on Google Play</Ext>}
+                {a.page && <Link to={a.page} className="btn btn-ghost">Game page</Link>}
                 {a.policy && <Link to={a.policy} className="btn btn-ghost">Privacy policy</Link>}
               </div>
             </div>
