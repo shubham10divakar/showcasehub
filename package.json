@@ -33,6 +33,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy:vps": "node scripts/deploy-vps.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
