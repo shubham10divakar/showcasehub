@@ -9,7 +9,7 @@ const { spawnSync } = require('child_process');
 
 const HOST = '187.127.154.73';
 const USER = process.argv[2] || process.env.VPS_USER || 'root';
-const DIR = '/var/www/showcasehub';
+const DIR = '/opt/apps/myportfolio/showcasehub';
 const target = `${USER}@${HOST}`;
 
 function run(cmd, args) {

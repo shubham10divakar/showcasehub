@@ -75,7 +75,7 @@ function Hero() {
 export default function Home() {
   const { posts } = useSubstack(2);
   const topPapers = papers.slice(0, 3);
-  const featured = ['safejev', 'freeaiagent', 'pdfdesk', 'plantdoc-predictor'].map((n) => packages.find((p) => p.name === n));
+  const featured = ['safejev', 'freeaiagent', 'slidenotes', 'plantdoc-predictor'].map((n) => packages.find((p) => p.name === n));
 
   return (
     <main className="home">
@@ -141,15 +141,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <Reveal as="section" className="section band">
-        <div>
-          <p className="eyebrow">Try it here</p>
-          <h2>PDFDesk: free PDF tools that run in your browser</h2>
-          <p className="lede">Merge, split, compress, OCR and sign. Your files stay on your device.</p>
-        </div>
-        <Link to="/pdfdesk" className="btn btn-primary">Open PDFDesk</Link>
-      </Reveal>
 
       <section className="section">
         <Reveal className="section-head">

@@ -106,7 +106,7 @@ export const papers = [
 
 export const packages = [
   { name: 'safejev', cat: 'AI Safety', desc: 'AI security and governance toolkit with local detectors for prompt attacks and risky agent actions.', released: 'Nov 2026' },
-  { name: 'pdfdesk', cat: 'Research Tools', desc: 'Local-first workspace for reading research papers: PDF reader, highlights, notes and search.', released: 'Nov 2026', internal: '/pdfdesk' },
+  { name: 'studydesk', cat: 'Research Tools', desc: 'Local-first workspace for reading research papers: PDF reader, highlights, notes, search and a history of your reading. Formerly pdfdesk.', released: 'Nov 2026' },
   { name: 'slidenotes', cat: 'Research Tools', desc: 'Link PDF or PowerPoint slides to the notes that explain them.', released: 'Nov 2026' },
   { name: 'scandata', cat: 'ML Tooling', desc: 'Audit ML datasets for leakage, label issues and quality problems.', released: 'Oct 2026' },
   { name: 'cyberjev', cat: 'AI Safety', desc: 'Small calibrated decision model for web attacks, prompt injection and phishing URLs.', released: 'Sep 2026' },

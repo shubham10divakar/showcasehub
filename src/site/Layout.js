@@ -7,7 +7,6 @@ import { Ext } from './ui';
 const links = [
   { to: '/research', label: 'Research' },
   { to: '/opensource', label: 'Open Source' },
-  { to: '/pdfdesk', label: 'PDFDesk' },
   { to: '/apps', label: 'Apps' },
   { to: '/games', label: 'Games' },
   { to: '/writing', label: 'Writing' },

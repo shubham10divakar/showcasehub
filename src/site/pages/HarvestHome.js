@@ -82,6 +82,7 @@ function HHLinks() {
       <Link to="/harvesthome/privacy">Privacy policy</Link>
       <Link to="/harvesthome/delete-account">Delete your account</Link>
       <Link to="/harvesthome/support">Support</Link>
+      <Link to="/harvesthome/terms">Terms of use</Link>
       <Ext href={MORE_GAMES}>More games ↗</Ext>
     </nav>
   );
@@ -344,6 +345,43 @@ export function HarvestDeleteAccount() {
       </ul>
       <p>Players who never created an account have nothing stored online: uninstalling the game removes everything.</p>
       <p>More about your information: <Link to="/harvesthome/privacy">Privacy policy</Link></p>
+    </LegalPage>
+  );
+}
+
+export function HarvestTerms() {
+  return (
+    <LegalPage title="Terms of use">
+      <h1>Harvest Home – Terms of use</h1>
+      <p className="legal-meta"><strong>Last updated:</strong> 25 November 2026</p>
+      <p>These terms are for <strong>Harvest Home: Farming Game</strong> (“the game”), made by Subham Divakar. By playing the game you agree to them. They are short on purpose.</p>
+
+      <h2>1. The game</h2>
+      <p>Harvest Home is free to play. It has no ads and nothing to buy. You may play it for your own enjoyment on any device where you installed it from Google Play.</p>
+
+      <h2>2. Your account</h2>
+      <p>You can play as a guest, or create an account (email and password, or Google) to keep your farm online. Keep your password to yourself; you are responsible for what is done with your account. You can delete your account at any time in the game (main menu, the account button) or on the <Link to="/harvesthome/delete-account">Delete your account</Link> page.</p>
+
+      <h2>3. Your farm</h2>
+      <p>Coins, diamonds, crops, animals and everything else in the game have no money value. They cannot be sold, swapped for money or moved to another game. Your names (your farmer and your farm) should be friendly: no rude, hateful or other people’s private details.</p>
+
+      <h2>4. Fair play</h2>
+      <p>Please do not try to break, copy, change or reverse-engineer the game or its online service, or use it to harm anyone. An account used this way may be removed.</p>
+
+      <h2>5. Changes and availability</h2>
+      <p>The game gets updates that may change, add or remove things in it. We do our best to keep your farm safe, but the game and its online saving are offered “as is”, without a promise that they will always work or never lose data. Keep your account signed in if you want your farm saved online.</p>
+
+      <h2>6. Liability</h2>
+      <p>As far as the law allows, the maker of the game is not responsible for any loss that comes from using it or from not being able to use it. Nothing in these terms takes away the rights you have by law where you live.</p>
+
+      <h2>7. Privacy</h2>
+      <p>How your information is used is in the <Link to="/harvesthome/privacy">Privacy policy</Link>.</p>
+
+      <h2>8. Changes to these terms</h2>
+      <p>If these terms change, the new version is posted on this page with a new date. Playing after a change means you accept the new terms.</p>
+
+      <h2>9. Contact</h2>
+      <p><Mail subject="Harvest Home terms" /></p>
     </LegalPage>
   );
 }
